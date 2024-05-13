@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins: wght@300; 400; 500; 600&display=swap");
+/* html {
+  scroll-behavior: smooth;
+} */
+.App {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  /* padding-right: 20px; */
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  --rt-color-white: #fff;
+  --rt-color-dark: #8e7c7c;
+  --rt-color-success: #8dc572;
+  --rt-color-error: #be6464;
+  --rt-color-warning: #f0ad4e;
+  --rt-color-info: #337ab7;
+  --rt-opacity: 0.94;
+  --rt-transition-show-delay: 0.12s;
+  --rt-transition-closing-delay: 0.35s;
+  --rt-border-radius: 40px;
+}
+/* a,
+.btn {
+  transition: all 300ms ease;
+} */
+/* .page {
+  padding: 20px;
+} */
+
+.navbar {
+  height: 60px;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  background-color: #afa9c4;
+  position: fixed;
+  justify-content: space-between;
+}
+.mainContent {
+  padding-top: 60px;
+}
+.navbar img {
+  height: 60%;
+  cursor: pointer;
+}
+
+nav {
+  margin-left: 30px;
+  display: flex;
+  gap: 30px;
+}
+
+nav a {
+  padding: 15px 10px;
+  border-radius: 30px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+@keyframes slide-in-out {
+  10% {
+    transform: translateX(0);
+  }
+  90% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(150%);
+  }
+}
+.alert {
+  position: fixed;
+  top: 70px;
+  right: 20px;
+
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: hsla(0, 0%, 39%, 0.2) 0px 2px 8px 0px;
+  background-color: hsl(60, 65%, 85%);
+  font-weight: 1.25rem;
+  font-weight: 600;
+  animation: slide-in-out 5s ease-in-out forwards;
+  transform: translateX(110%);
+}
+
+button:disabled {
+  cursor: not-allowed;
+  box-shadow: none;
+}
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  padding: 10px;
+  width: 100px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  cursor: pointer;
+}
+a {
+  /* all: unset; */
+  color: black;
+  text-decoration: none;
+}
+a :hover {
+  cursor: pointer;
+}
